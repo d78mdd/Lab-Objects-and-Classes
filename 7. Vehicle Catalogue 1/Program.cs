@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace _7.Vehicle_Catalogue
+namespace _7.Vehicle_Catalogue_1
 {
     class Program
     {
@@ -37,8 +39,8 @@ namespace _7.Vehicle_Catalogue
                     weight = int.Parse(tokens[3]);
                 }
 
-                Car car = new Car();
-                Truck truck = new Truck();
+                Car car = null;
+                Truck truck = null;
 
                 if (type == "Car")
                 {
@@ -104,7 +106,6 @@ namespace _7.Vehicle_Catalogue
                     Console.WriteLine($"{truck.Brand}: {truck.Model} - {truck.Weight}kg");
                 }
             }
-
         }
     }
 
